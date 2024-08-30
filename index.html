@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parcial 1 - Samuel Grande - Carlos Cabrera</title>
+    <title>Página de Inicio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .button-container {
+        display: flex;
+        gap: 20px;
+      }
+
+      button {
+        background-color: #4caf50; /* Verde */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #45a049; /* Verde más oscuro */
+      }
+    </style>
   </head>
   <body>
-    <p>Esta es la página de inicio</p>
+    <h1>Página de Inicio</h1>
+    <div class="button-container">
+      <button onclick="window.location.href='album.html';">Ver Album</button>
+      <button onclick="window.location.href='eventos.html';">
+        Ver Eventos
+      </button>
+    </div>
   </body>
 </html>
